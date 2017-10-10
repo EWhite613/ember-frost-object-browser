@@ -3,7 +3,8 @@ $frost-action-bar-background-color: rgba($frost-color-white, 0.85);
 
 .frost-action-bar {
   display: flex;
-  position: relative;
+  position: absolute;
+  bottom: 0;
   left: 1px;
   flex-direction: row;
   justify-content: space-between;
@@ -26,5 +27,9 @@ $frost-action-bar-background-color: rgba($frost-color-white, 0.85);
 
   &-buttons > * {
     margin-left: 15px;
+  }
+
+  &:not([style='display: none;']) + .frost-list {
+    padding-bottom: 60px;
   }
 }
