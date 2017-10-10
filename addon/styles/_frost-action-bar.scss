@@ -13,7 +13,7 @@ $frost-action-bar-background-color: rgba($frost-color-white, 0.85);
   padding: 10px;
   background-color: $frost-action-bar-background-color;
   box-shadow: 0 -2px 8px $frost-action-bar-box-shadow-color;
-  z-index: 1;
+  z-index: 2;
 
   &-selections {
     align-self: center;
@@ -30,6 +30,8 @@ $frost-action-bar-background-color: rgba($frost-color-white, 0.85);
   }
 
   &:not([style='display: none;']) + .frost-list {
-    padding-bottom: 60px;
+    .vertical-item:last-child {
+      padding-bottom: 60px;
+    }
   }
 }
